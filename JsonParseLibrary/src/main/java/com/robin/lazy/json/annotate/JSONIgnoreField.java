@@ -1,4 +1,4 @@
-package com.lazy.library.util.json.annotate;
+package com.robin.lazy.json.annotate;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

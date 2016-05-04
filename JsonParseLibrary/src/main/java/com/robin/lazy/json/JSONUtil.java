@@ -1,4 +1,6 @@
-package com.lazy.library.util.json;
+package com.robin.lazy.json;
+
+import com.robin.lazy.logger.LazyLogger;
 
 import java.io.IOException;
 import java.io.StringWriter;
@@ -10,8 +12,6 @@ import org.codehaus.jackson.map.JsonMappingException;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.codehaus.jackson.map.SerializationConfig;
 import org.codehaus.jackson.map.ser.CustomSerializerFactory;
-
-import com.lazy.library.util.logger.LazyLogger;
 
 public class JSONUtil
 {

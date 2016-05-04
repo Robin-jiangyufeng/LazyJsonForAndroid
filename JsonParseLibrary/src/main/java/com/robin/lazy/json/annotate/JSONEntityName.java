@@ -8,7 +8,7 @@
  * 修改单号:  <修改单号>
  * 修改内容:  <修改内容>
  */
-package com.lazy.library.util.json.annotate;
+package com.robin.lazy.json.annotate;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

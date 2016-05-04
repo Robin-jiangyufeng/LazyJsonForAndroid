@@ -1,4 +1,4 @@
-package com.lazy.library.util.json;
+package com.robin.lazy.json;
 
 import org.json.JSONObject;
 

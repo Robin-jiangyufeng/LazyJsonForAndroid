@@ -1,12 +1,12 @@
-package com.lazy.library.util.json;
+package com.robin.lazy.json;
+
+import com.robin.lazy.json.annotate.JSONAnnotateUtil;
 
 import java.util.List;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
-import com.lazy.library.util.json.annotate.JSONAnnotateUtil;
 
 /**
  * <一句话功能简述> <功能详细描述>

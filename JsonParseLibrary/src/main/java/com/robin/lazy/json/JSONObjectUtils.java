@@ -1,4 +1,6 @@
-package com.lazy.library.util.json;
+package com.robin.lazy.json;
+
+import com.robin.lazy.util.StringUtils;
 
 import java.lang.reflect.Field;
 import java.util.Collection;
@@ -10,8 +12,6 @@ import java.util.Map;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
-import com.lazy.library.util.StringUtils;
 
 /**
  * json工具
@@ -30,14 +30,12 @@ public class JSONObjectUtils {
 	 * 
 	 * @param <V>
 	 * 
-	 * @param field
+	 * @param jsonOb
 	 *            需要设置的字段
-	 * @param columnName
+	 * @param key
 	 *            数据库字段名
-	 * @param entityT
+	 * @param clazz
 	 *            实体模版
-	 * @param cursor
-	 *            数据集合
 	 */
 	@SuppressWarnings("unchecked")
 	public static <V extends Object> V getValue(JSONObject jsonOb, String key,
@@ -127,7 +125,7 @@ public class JSONObjectUtils {
 	 *         <li>if jsonData {@link JSONObject#JSONObject(String)} exception,
 	 *         return defaultValue</li>
 	 *         <li>return
-	 *         {@link JSONObjectUtils#getLong(JSONObject, String, JSONObject)}</li>
+	 *         {@link JSONObjectUtils#(JSONObject, String, JSONObject)}</li>
 	 *         </ul>
 	 */
 	public static Long getLong(String jsonData, String key, Long defaultValue) {
@@ -210,7 +208,7 @@ public class JSONObjectUtils {
 	 *         <li>if jsonData {@link JSONObject#JSONObject(String)} exception,
 	 *         return defaultValue</li>
 	 *         <li>return
-	 *         {@link JSONObjectUtils#getInt(JSONObject, String, JSONObject)}</li>
+	 *         {@link JSONObjectUtils#(JSONObject, String, JSONObject)}</li>
 	 *         </ul>
 	 */
 	public static Integer getInt(String jsonData, String key,
@@ -242,7 +240,7 @@ public class JSONObjectUtils {
 	}
 
 	/**
-	 * @param jsonObject
+	 * @param jsonData
 	 * @param key
 	 * @param defaultValue
 	 * @return
@@ -293,7 +291,7 @@ public class JSONObjectUtils {
 	 *         <li>if jsonData {@link JSONObject#JSONObject(String)} exception,
 	 *         return defaultValue</li>
 	 *         <li>return
-	 *         {@link JSONObjectUtils#getDouble(JSONObject, String, JSONObject)}
+	 *         {@link JSONObjectUtils#(JSONObject, String, JSONObject)}
 	 *         </li>
 	 *         </ul>
 	 */
@@ -327,7 +325,7 @@ public class JSONObjectUtils {
 	}
 
 	/**
-	 * @param jsonObject
+	 * @param jsonData
 	 * @param key
 	 * @param defaultValue
 	 * @return
@@ -379,7 +377,7 @@ public class JSONObjectUtils {
 	 *         <li>if jsonData {@link JSONObject#JSONObject(String)} exception,
 	 *         return defaultValue</li>
 	 *         <li>return
-	 *         {@link JSONObjectUtils#getString(JSONObject, String, JSONObject)}
+	 *         {@link JSONObjectUtils#(JSONObject, String, JSONObject)}
 	 *         </li>
 	 *         </ul>
 	 */
@@ -451,7 +449,7 @@ public class JSONObjectUtils {
 	 *         <li>if jsonData {@link JSONObject#JSONObject(String)} exception,
 	 *         return defaultValue</li>
 	 *         <li>return
-	 *         {@link JSONObjectUtils#getStringArray(JSONObject, String, JSONObject)}
+	 *         {@link JSONObjectUtils#(JSONObject, String, JSONObject)}
 	 *         </li>
 	 *         </ul>
 	 */
@@ -576,7 +574,7 @@ public class JSONObjectUtils {
 	 *         <li>if jsonData {@link JSONObject#JSONObject(String)} exception,
 	 *         return defaultValue</li>
 	 *         <li>return
-	 *         {@link JSONObjectUtils#getJSONArray(JSONObject, String, JSONObject)}
+	 *         {@link JSONObjectUtils#(JSONObject, String, JSONObject)}
 	 *         </li>
 	 *         </ul>
 	 */
@@ -676,7 +674,7 @@ public class JSONObjectUtils {
 	/**
 	 * get Boolean from jsonObject
 	 * 
-	 * @param jsonObject
+	 * @param jsonData
 	 * @param key
 	 * @param defaultValue
 	 * @return <ul>
@@ -749,7 +747,7 @@ public class JSONObjectUtils {
 	 * @return <ul>
 	 *         <li>if sourceObj is null, return null</li>
 	 *         <li>else parse entry by
-	 *         {@link MapUtils#putMapNotEmptyKey(Map, String, String)} one by
+	 *         {@link (Map, String, String)} one by
 	 *         one</li>
 	 *         </ul>
 	 */

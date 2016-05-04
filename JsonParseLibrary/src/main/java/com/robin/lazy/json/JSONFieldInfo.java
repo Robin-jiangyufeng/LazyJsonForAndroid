@@ -1,12 +1,12 @@
-package com.lazy.library.util.json;
+package com.robin.lazy.json;
+
+import com.robin.lazy.json.annotate.JSONAnnotateUtil;
+import com.robin.lazy.json.annotate.JSONFieldConfig;
 
 import java.lang.reflect.Field;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-
-import com.lazy.library.util.json.annotate.JSONAnnotateUtil;
-import com.lazy.library.util.json.annotate.JSONFieldConfig;
 
 /**
  * json构造工具类

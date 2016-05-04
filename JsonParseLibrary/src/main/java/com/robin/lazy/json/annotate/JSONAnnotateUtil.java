@@ -1,8 +1,8 @@
-package com.lazy.library.util.json.annotate;
+package com.robin.lazy.json.annotate;
+
+import com.robin.lazy.util.AnnotateUtils;
 
 import java.lang.reflect.Field;
-
-import com.lazy.library.util.AnnotateUtils;
 
 /**
  * json注解工具
@@ -93,7 +93,7 @@ public class JSONAnnotateUtil
     /**
      * 获取json对象标题名字
      * 
-     * @param field
+     * @param clazz
      * @return
      */
     public static String getNameByJSON(Class<?> clazz)
